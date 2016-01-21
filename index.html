@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app8.us.archive.org";archive_analytics.values.server_ms=76;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+    <meta charset="UTF-8">
+    <title>MadHacks 2015</title>
+    <meta name="description"
+          content="MadHacks 2015 is UW-Madison's first large-scale hackathon, April 18th-19th.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- LGTM 1027 -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap imports -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- User sheets -->
+    <link rel="stylesheet" href="css/madhacks2015.css">
+
+    <!-- Analytics -->
+
+    <!-- Google analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59745668-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+        // Mobile check to see if we need to disable smooth animations
+        function isMobile() {
+            var check = false;
+            (function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+            return check;
+        }
+
+        // Define a scroll-to-top convenience method.
+        function toTop(element) {
+
+            if (isMobile()) {
+                // Do nothing, let the anchor tags handle it...
+                //$('html, body').scrollTop($(element).offset().top);
+            }else {
+                $('html, body').animate({
+                    scrollTop: $(element).offset().top
+                }, 500);
+            }
+        }
+    </script>
+
+</head>
+<body style="background-color: #222;;">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://madhacks.org/";
+
+var firstYear = 1996;
+var displayDay = "26";
+var displayMonth = "Jun";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://madhacks.org/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20150626050756" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150518224532/http://madhacks.org/" title="18 May 2015">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 5:07:56 Jun 26, 2015">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20150801215732/http://madhacks.org/" title="1 Aug 2015"><strong>AUG</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150526051949/http://madhacks.org/" title="5:19:49 May 26, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 5:07:56 Jun 26, 2015">26</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20150801215732/http://madhacks.org/" title="21:57:32 Aug 1, 2015"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20140517193122/http://madhacks.org/" title="17 May 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 5:07:56 Jun 26, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2016
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20150626050756*/http://madhacks.org/" title="See a list of every capture for this URL">29 captures</a>
+           <div class="r" title="Timespan for captures of this URL">8 Jul 11 - 1 Aug 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000113201_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000010000002_2015:5:126251010000_2016:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<div class="row vpRow bg1" id="row1">
+    <div class="col-lg-6 col-md-12">
+        <img class="headerImage"
+             src="img/madhacks2048.png"
+             alt="MadHacks 2015" />
+
+        <div class="overlayBlockDark haxcontainer">
+            <p class="text-center haxtext">
+                <strong>April
+                18th-19th</strong> in
+                <strong>Madison, WI</strong>
+        <br /><span style="font-size:0.75em">Mad Geniuses Welcome</span>
+        </p>
+
+        </div>
+
+    </div>
+    <div class="col-lg-1 col-md-12"></div>
+    <div class="col-lg-5 col-md-12">
+        <div class="overlayBlockDark">
+            <br /><br />
+            <h1>MadHacks 2015</h1>
+
+            <p>A premier Midwestern hackathon </p>
+            <br /><br />
+            <p>Join us for a weekend of non-stop hacking, and show us
+                what
+                you're made of!</p>
+            <a href="#row4"
+               class="btn-lg usr-btn-red btn-block"
+                    onclick="toTop('#schedule');" >MadHacks Schedule</a>
+            <br /><br />
+		<p>Have questions about what to expect?</p>
+		<a href="#row3" class="btn-lg usr-btn-red btn-block" onclick="toTop('#row3');">
+			View frequently asked questions
+		</a>
+		<br /><br />
+            <p>Are you interested in sponsoring, volunteering, or mentoring?</p>
+            <a href="#row5"
+               class="btn-lg usr-btn-dark btn-block"
+               onclick="toTop('#row5');" >Sponsor MadHacks!</a>
+            <br /><br />
+            <p>See how MadHacks will change the landscape of hackathons!
+                </p>
+            <a href="#row2"
+               class="btn-lg usr-btn-dark btn-block"
+               onclick="toTop('#row2');">
+                Tell me more!
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row vpRow bg4" id="row4">
+    <span id="apply"></span>
+    <span id="schedule"></span>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlockDark text-center">
+                <h1 class="haxtext">MadHacks 2015</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="overlayBlockDark"> 
+                <h3>When</h3>
+
+                <p>
+                <ul class="schedule">
+                    <li><strong>4/18</strong><em>Day One</em>
+                    <ul>
+                    <li><strong>09:00&ndash;10:30</strong> Check-in</li>
+                    <li><strong>11:00</strong> Opening Ceremony</li>
+                        <li><strong>12:00</strong> Hacking Begins</li>
+                    <li><strong>13:00</strong> Lunch</li>
+                    <li><strong>19:00</strong> Dinner</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>4/19</strong><em>Day Two</em>
+                    <ul>
+                    <li><strong>06:30</strong> Breakfast</li>
+                    <li><strong>11:00</strong> Lunch</li>
+                    <li><strong>12:00</strong> Hacking Ends</li>
+                    <li><strong>12:30&ndash;14:00</strong> Expo</li>
+                    <li><strong>16:00</strong> Dinner</li>
+                        </ul>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlockDark">
+                <h2>Are you a MAD GENIUS?</h2>
+
+                <p> Unfortunately, applications are now closed for students
+                    outside of UW-Madison. If you attend UW-Madison and are interested in applying,
+                    there are a few open spots left for you &mdash; please contact <a
+                    href="mailto:team@madhacks.org">team@madhacks.org</a> as soon as possible!
+                </p>
+
+<!--
+                <a href="/web/20150626050756/http://goo.gl/forms/yjRZ4u7W9E" class="btn btn-block usr-btn-red"><h1>Let's do
+                        this!</h1></a>
+
+                <h3>When do I know if I'm in?</h3>
+
+                <p>Keep
+                    an eye on your email for messages from
+                    <a href="mailto:team@madhacks.org">team@madhacks.org</a> for
+                    acceptance details!</p>
+
+                <h3>How many people get accepted?</h3>
+
+                <p>We're looking to accept about 300 from across
+                    the
+                    country. We hope to see you here!</p>
+
+
+-->
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="overlayBlockDark">
+                <h3>What are people saying about MadHacks?</h3>
+                <p>We've already got optimism pouring in from your applications - check out what other hackers are excited about and looking forward to at MadHacks:</p>
+
+                <div id="testiHolder" class="testimonial">
+                    <span id="testiContent">Loading...</span>
+                </div>
+
+                <script type="text/javascript">
+
+                    var testimonials = [
+                        "MadHacks seems like a really interesting and innovative hackathon and I would love to check it out and contribute by making something awesome!",
+                        "The focus on crazy, wild ideas and pushing the boundaries that MadHacks emphasizes.",
+                        "You guys use art to show your rad-ness instead of pushing the idea of eliteness on everyone. That means you really have to be extraordinary. Props!",
+                        "You guys sound like you would be open to accepting a Mechanical Engineer. [...] I want to show that hackathons are not just for computer oriented majors.",
+                        "I love the mad scientist idea, most hackathons have cliche projects; I want to see the truly original and the insane!",
+                        "MadHacks is exciting to me because of its focus on the wacky.",
+                        "This hackathon seems unique because it encourages originality and cool hacks. It would be fun to be judged by other contestants!",
+                        "The no-holds-barred attitude. I get the feeling that this is a hackathon where it isn't just acceptable but encouraged to do something other than a web application.",
+                        "The statement about the event being about the crazy and weird really speaks for itself and makes it sound EVEN more amazing!",
+                        "Winners being chosen by the developers instead of judges... and your cool website.",
+                        "I've met some people from UW-Madison at hackathons and they're all pretty rad.",
+                    ];
+
+                    var curIdx = ~~(Math.random() * testimonials.length);
+
+                    function setQuote(idx) {
+                        $('#testiContent').text(testimonials[idx % testimonials.length]);
+                    }
+
+                    setQuote(curIdx);
+
+                    function nextQuote() {
+                        setQuote(++curIdx);
+                    }
+                </script>
+                <br />
+                <div>
+                    <a href="#" onclick="nextQuote(); return false;" class="btn btn-block">Next testimonial!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+            <div class="overlayBlockDark">
+                <h3>Who else will be there?</h3>
+
+                <p>In addition to your fellow hackers-in-arms, we've got a
+                    wonderful group of sponsors that help us put on this massive
+                    event. Sponsors are being added by the day, so keep an eye out for
+                    your favorite tech product, company, or platform!
+                </p>
+                <a href="#row5" class="btn btn-block"
+                   onclick="toTop('#row5');">
+                    Sponsor details
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row vpRow bg2" id="row2">
+    <span id="about"></span>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlockDark text-center">
+                <h1 class="haxtext">About MadHacks</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="overlayBlock">
+                <h3>What</h3>
+
+                <p>MadHacks 2015 is UW-Madison's first intercollegiate national
+                    hackathon. Come make history with 300 of your peers
+                    in one of the Midwest's greatest
+                    collaborative events this spring.</p>
+
+
+                <h3>Where</h3>
+
+                <p>MadHacks will be hosted at 605 Science Drive, Madison, WI. We're in an
+                    abandoned-laboratory-turned-hackerspace this year &mdash; how fitting!</p>
+
+                <h3>Who</h3>
+
+                <p>You! If you're 18+ and in school, you should apply to MadHacks to
+                    come showcase your talents! Students of all backgrounds and skill
+                    levels are welcome!</p>
+
+                <h3>How</h3>
+
+                <p>You'll spend 24 hours hacking on a new project in teams of 1-4.
+                    At the end of it all, you'll demo your project to
+                    the other hackers. In the meantime, you'll have free food,
+                    enjoy activities such as: a costume contest, dance competition,
+                    and gaming in our dedicated leisure lounge; meet
+                    wonderful sponsors, and make lifelong
+                    friends. May the maddest project win!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+            <div class="overlayBlock">
+                <h3>What's a Hackathon?</h3>
+
+                <p>If you've never had the pleasure of attending a hackathon before,
+                    <a href="/web/20150626050756/https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601">check out this post</a>
+                    about what a hackathon is and why you should attend one!</p>
+
+                <p>Be sure to review the <a
+                            href="/web/20150626050756/http://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+                        MLH code of conduct</a> to know what to expect at MadHacks!
+                </p>
+            </div>
+            <div class="overlayBlock">
+                <h3>What makes MadHacks different?</h3>
+
+                <p>Unlike other hackathons, MadHacks is going to be putting
+                    emphasis on the wacky, the original, and the downright
+                    impossible! Like the mad geniuses, tinkerers, makers, and designers preceding
+                    us, we want to test our boundaries like never before! We're
+                    reaching out to the highly dedicated risk-takers, the
+                    envelope pushers, and the daredevils. We hope to produce a
+                    new kind of hackathon: where the winners are chosen by the
+                    hackers, and the sponsors feel like they are right in the
+                    middle of the hacker community itself &mdash; rather than on
+                    the outside looking in.</p>
+
+                <a href="#row3" class="btn-lg btn-block"
+                   onclick="toTop('#row3');">
+                    I've got more questions...
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row vpRow bg3" id="row3">
+    <span id="questions"></span>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlockDark text-center">
+                <h1 class="haxtext">Frequently Asked Questions</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+		<div class="overlayBlock">
+			<h3>Who can attend?</h3>
+			<p>You must be at least 18 years old to attend MadHacks, unless you are a volunteer from a local high school.</p>
+		</div>
+		<div class="overlayBlock">
+			<h3>Is MadHacks free?</h3>
+			<p>Yep! If you're accepted, you'll be attending MadHacks for free.</p>
+		</div>
+		<div class="overlayBlock">
+			<h3>Will there be mentors at MadHacks?</h3>
+			<p>Yes - we will have plenty of resources for first-time hackers, including mentors from top employers. Be sure to visit their offices and ask questions!</p>
+		</div>
+
+		
+
+
+		<div class="overlayBlock">
+
+                <h3>What's the food situation?</h3>
+                <p>MadHacks will be catered with enough food to keep you
+                    hacking well into the night, thanks to our wonderful
+                    sponsors.
+
+                    In our registration form, please indicate any dietary
+                    restrictions you have so we are able to accommodate you as
+                    we attempt create orders.
+                </p>
+            </div>
+
+            <div class="overlayBlock">
+                <h3>If I drive, where can I park?</h3>
+
+                <p>The wonderful thing about our venue is we can offer you
+                    free parking, while supplies last! Please indicate this in your application so we know what the
+                    demand is like.</p>
+            </div>
+	    <div class="overlayBlock">
+			<h3>How can I find a carpool?</h3>
+			<p>If you wish to provide a ride to hackers in your area, please contact <a href="mailto:team@madhacks.org">team@madhacks.org</a> &mdash; if you're looking to join a carpool, please indicate this on the RSVP form.</p>
+		</div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="overlayBlock">
+                <h3>Will there be buses or travel reimbursement?</h3>
+                <p>We have included travel costs into our budget, but
+                    routes and reimbursements will be dependent on demand, as well as pricing. It's
+                    likely that we'll be sending buses along
+                    major routes for nearby (Midwest) colleges. Please
+                    indicate your preference for travel on your application
+                    to help us better determine allocations.
+                </p>
+            </div>
+
+            <div class="overlayBlock">
+                <h3>What kind of hardware is available to hack with?</h3>
+                <p>You can always bring your own hardware along to hack, but we'll have some available to check out for
+                    the weekend! Here's a sample of what we've got:
+                </p>
+                <ul>
+			<li>6x Arduino</li>
+			<li>6x Breadboards</li>
+			<li>3x Dell Monitors</li>
+			<li>10x Leap Motion</li>
+			<li>3x Muse</li>
+			<li>19x Myo</li>
+			<li>6x Oculus Rift</li>
+			<li>15x Pebble</li>
+			<li>6x Sparkcore</li>
+			<li>1x Galileo board</li>
+                </ul>
+		<p>
+			Hardware is supply-limited, so be sure to check it out early if you're interested!
+		</p>
+            </div>
+
+		<div class="overlayBlock">
+			<h3>How can I form my team?</h3>
+			<p>If you do not have a team and would like to form one prior to the event, consider posting in the
+				<a href="/web/20150626050756/https://facebook.com/groups/1550934531853346/">MadHacks Participants Group</a>.</p>
+			<p>There will also be a team forming session near the beginning of the hackathon.</p>
+		</div>
+		<div class="overlayBlock">
+			<h3>Will there be fun activities at MadHacks?</h3>
+			<p>Of course! We've got plans for some or all of the following things:
+				<ul>
+					<li>Tag</li>
+					<li>Frisbee</li>
+					<li>Costume content</li>
+					<li>Mafia</li>
+					<li>Water balloon fights</li>
+					<li>Video games</li>
+					<li>Board games</li>
+					<li>Card games</li>
+					<li>Trivia</li>
+				</ul>
+			</p>
+		</div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="overlayBlock">
+            <h3>What should I bring?</h3>
+
+                <p>Whatever you need to make your hack a success! For most
+                    people, this means a laptop, charger, smartphone, and your
+                    friends! Optional, but nice things include: a pillow,
+                    blanket or sleeping bag, a change
+                    of clothes, a toothbrush, toothpaste, and deodorant.
+                    Please don't bring anything you wouldn't take on a school
+                    field trip.
+                </p>
+
+                <p>
+                    Our venue also has a single shower, so feel free to bring
+                    your own soap and don't forget to bring a towel.
+                </p>
+            </div>
+
+		<div class="overlayBlock">
+			<h3>How will my hack be judged?</h3>
+			<p>Fellow hackers will be your judge during the expo! This means that a voting system will be in
+place for you to choose the MadHacks winners. There will be prizes for the most mad hack,
+best hardware, best software, and the most complicated way to accomplish a mundane task, etc.</p>
+			<p>There will also be API prizes provided by our corporate sponsors. If you wish to compete for
+these prizes, please indicate this when submitting your project to ChallengePost.<p>	
+		</div>
+
+		<div class="overlayBlock">
+			<h3>What are the prizes?</h3>
+			<p>We will be releasing detailed prize information from MadHacks and sponsors closer to the
+event.</p>
+		</div>
+
+		<div class="overlayBlock">
+			<h3>How big can my team be?</h3>
+			<p>Team sizes may be from 1 to 4 members.</p>
+		</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlock">
+                <h3>Where's the event relative to the UW campus? How can I get there?</h3>
+                <p>The hackathon will be taking place at 605 Science Drive.
+                    Take a look at the following map for an idea of where
+                    the location is with respect to the UW campus.</p>
+                <a
+                        href="/web/20150626050756/https://www.google.com/maps/place/605+Science+Dr,+Madison,+WI+53711/@43.0550119,-89.4701382,17z/">
+                    <img src="img/map.png" alt="A map to 605 Science Drive."
+                         class="mapImage" />
+                </a>
+
+		<h3>Getting to MadHacks</h3>
+		<ul>
+			<li>If you're coming from the east, consider taking Badger Bus &mdash; it's $20 one-way.</li>
+			<li>If coming from the south, west, or north, consider Van Galder Bus Lines or Greyhound.
+				<li>Most major bus lines will drop you off near downtown Madison.</li>
+			</li>
+			<li>There is an airport in downtown Madison if you are flying in, but consider flying into
+Milwaukee and taking the Badger Bus to Madison. This is the cheaper option.</li>
+			<li>If these above routes do not work, we are also arranging carpools. Please indicate your
+preference on the RSVP form.</li>
+			<li>If you are coming from downtown #2, #6, and #7 bus lines from the Madison Metro Transit System run directly through downtown to our venue and back. All bus lines cost $2 and will
+				run from approximately 6:30 am CT to midnight CT. Google Maps has information on the bus
+				routes.</li>
+
+		</ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlock">
+                <a href="#row4" class="btn btn-block usr-btn-red"
+                onclick="toTop('#row4');">
+                    I'm convinced! Sign me up!
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row vpRow bg5" id="row5">
+    <span id="sponsors"></span>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlockDark text-center">
+                <h1 class="haxtext">Sponsors</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlock">
+
+                <p>MadHacks wouldn't be possible without the gracious support
+                    of our wonderful sponsors - and more are being
+                    added by the day! Are you a company interested
+                    in adding your name to the list? Email us
+                    <a
+                            href="mailto:admin@madhacks.org?subject=I'm interested in sponsoring MadHacks!" >here</a>. Be sure to check out our <a href="pdf/sponsorship.pdf">sponsorship tiers</a> for more information about the benefits of sponsoring.</p>
+            </div>
+        </div>
+    </div>
+
+    <br /><br />
+x
+    <!-- Row 1. -->
+    <div class="row">
+        <div class="col-md-3 sponsorLogoCol">
+            <!--<a href="/web/20150626050756/http://microsoft.com">
+                <img src="img/logos/microsoft.png"
+                     class="sponsorLogo"
+                     alt="Microsoft" />
+            </a>-->
+        </div>
+        <div class="col-md-6 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://microsoft.com/">
+                    <img src="img/logos/microsoft.png"
+                         class="sponsorLogo"
+                         alt="Microsoft"/>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 sponsorLogoCol">
+            <!--<a href="/web/20150626050756/http://sector67.org/">
+                <img src="img/logos/sector67.png"
+                     class="sponsorLogo"
+                     alt="Sector67" />
+            </a>-->
+        </div>
+    </div>
+
+    <!-- Row 2. -->
+    <div class="row">
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/https://careers.epic.com/">
+                    <img src="img/logos/epic.png"
+                         class="sponsorLogo"
+                         alt="Epic" />
+                </a>
+            </div>
+
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://getpebble.com/">
+                    <img src="img/logos/pebble.png"
+                         class="sponsorLogo"
+                         alt="Pebble" />
+                </a>
+            </div>
+
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://www.wins.net/">
+                    <img src="img/logos/win.png"
+                         class="sponsorLogo"
+                         alt="WIN" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://ge.com/">
+                    <img src="img/logos/ge.png"
+                         class="sponsorLogo"
+                         alt="GE" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://warf.org/">
+                    <img src="img/logos/warf.png"
+                         class="sponsorLogo"
+                         alt="WARF" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 sponsorLogoCol sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://singlewire.com/">
+                    <img src="img/logos/singlewire.png"
+                         class="sponsorLogo"
+                         alt="Singlewire"/>
+                </a>
+            </div>
+
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://jumptrading.com/">
+                    <img src="img/logos/jumptrading.png"
+                         class="sponsorLogo"
+                         alt="Jump Trading" />
+                </a>
+            </div>
+
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://widen.com/">
+                    <img src="img/logos/widen.png"
+                         class="sponsorLogo"
+                         alt="Widen" />
+                </a>
+            </div>
+
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://drifty.com/">
+                    <img src="img/logos/drifty.png"
+                         class="sponsorLogo"
+                         alt="Drifty" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2.5 -->
+    <div class="row">
+        <div class="col-md-4 sponsorLogoCol">
+
+        </div>
+        <div class="col-md-4 sponsorLogoCol">
+
+        </div>
+        <div class="col-md-4 sponsorLogoCol sponsorLogoCol">
+
+
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+        <div class="col-md-4 sponsorLogoCol">
+
+        </div>
+        <div class="col-md-4 sponsorLogoCol">
+
+
+
+
+
+        </div>
+        <div class="col-md-4 sponsorLogoCol">
+
+        </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="row">
+        <div class="col-md-4 sponsorLogoCol">
+		<!--
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://amfam.com">
+                    <img src="img/logos/amfam.png"
+                         class="sponsorLogo"
+                         alt="American Family Insurance" />
+                </a>
+            </div>
+		-->
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://perblue.com/">
+                    <img src="img/logos/perblue.png"
+                         class="sponsorLogo"
+                         alt="PerBlue" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://4490.ventures/">
+                    <img src="img/logos/4490.png"
+                         class="sponsorLogo"
+                         alt="PerBlue" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://ionicframework.com/">
+                    <img src="img/logos/ionic.png"
+                         class="sponsorLogo"
+                         alt="Ionic" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://shopbop.com/">
+                    <img src="img/logos/shopbop.png"
+                         class="sponsorLogo"
+                         alt="ShopBop" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://gener8tor.com/">
+                    <img src="img/logos/gener8tor.png"
+                         class="sponsorLogo"
+                         alt="gener8tor" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlockDark text-center">
+                <h2 class="haxtext">Partners</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="overlayBlock">
+                <p>MadHacks would also like to thank our operational partners for their continued support!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="row">
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://capitolentrepreneurs.com/">
+                    <img src="img/logos/capitolentrepreneurs.png"
+                         class="sponsorLogo"
+                         alt="Capitol Entrepreneurs" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://sector67.org/">
+                    <img src="img/logos/sector67.png"
+                         class="sponsorLogo"
+                         alt="Sector67" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/https://transcend.slc.engr.wisc.edu/">
+                    <img src="img/logos/transcend.png"
+                         class="sponsorLogo"
+                         alt="Transcend" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://barscout.net/">
+                    <img src="img/logos/barscout.png"
+                         class="sponsorLogo"
+                         alt="BarScout" />
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://doit.wisc.edu/">
+                    <img src="img/logos/doit.png"
+                         class="sponsorLogo"
+                         alt="DoIT" />
+                </a>
+            </div>
+            <!--<div class="overlayBlock">
+                <a href="/web/20150626050756/http://upl.cs.wisc.edu">
+                    <img src="img/logos/upl.png"
+                         class="sponsorLogo"
+                         alt="Undergraduate Projects Lab" />
+                </a>
+            </div>-->
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://win.wisc.edu/organization/hub">
+                    <img src="img/logos/hub.png"
+                         class="sponsorLogo"
+                         alt="Hub" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://kpcb.com/">
+                    <img src="img/logos/kpcb.png"
+                         class="sponsorLogo"
+                         alt="KPCB" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://drakontasconsulting.com/">
+                    <img src="img/logos/drakontas.png"
+                         class="sponsorLogo"
+                         alt="Drakontas Consulting" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://github.com/">
+                    <img src="img/logos/github.png"
+                         class="sponsorLogo"
+                         alt="GitHub" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/https://globalhackathon.io/">
+                    <img src="img/logos/ghseoul.png"
+                         class="sponsorLogo"
+                         alt="GH Seoul" />
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 sponsorLogoCol">
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://universityresearchpark.org/">
+                    <img src="img/logos/urp.png"
+                         class="sponsorLogo"
+                         alt="University Research Park" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://enlight.club/">
+                    <img src="img/logos/enlight.png"
+                         class="sponsorLogo"
+                         alt="Enlight Fountain Control Group" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://technexus.com/">
+                    <img src="img/logos/technexus.png"
+                         class="sponsorLogo"
+                         alt="TechNexus" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://qiqqa.com/">
+                    <img src="img/logos/qiqqa.png"
+                         class="sponsorLogo"
+                         alt="Qiqqa" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/http://www.thalmic.com/">
+                    <img src="img/logos/thalmiclabs.png"
+                         class="sponsorLogo"
+                         alt="Thalmic Labs" />
+                </a>
+            </div>
+            <div class="overlayBlock">
+                <a href="/web/20150626050756/https://eatstreet.com/">
+                       <img src="img/logos/eatstreet.jpg"
+                         class="sponsorLogo"
+                         alt="EatStreet" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="row footer">
+    <div class="col-md-4">
+        <h4>Stay Connected</h4>
+        <p>Got something you want to say? Send us an email at
+            <a href="mailto:team@madhacks.org">team@madhacks.org</a>, join
+        <a href="/web/20150626050756/https://www.facebook.com/UWMadHacks">our Facebook page</a>,
+            or hit us up on twitter <a href="/web/20150626050756/https://twitter.com/UWMadHacks">
+                @UWMadHacks</a>.</p>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+        <h4>Photography</h4>
+        <p>
+            <ul style="color: #eee;">
+                <li>1) Richard Hurd, CC BY 2.0; image reprocessed</li>
+                <li>2) Richard Hurd, CC BY 2.0</li>
+                <li>3) Richard Hurd, CC BY 2.0</li>
+                <li>4) Richard Hurd, CC BY 2.0</li>
+                <li>5) Richard Hurd, CC BY 2.0</li>
+            </ul>
+        </p>
+    </div>
+
+    <!-- Other footer stuff can go here too. -->
+</div>
+<br /><br />
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 5:07:56 Jun 26, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 0:33:51 Jan 21, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
